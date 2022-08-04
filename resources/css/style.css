@@ -61,6 +61,7 @@
 .banner{
     background: url("camp.jpg") no-repeat;
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -122,6 +123,9 @@
     }
     .navbar .menu-list li a{
         font-size: 23px;
+    }
+    .banner{
+        height: 20vh;
     }
 }
 

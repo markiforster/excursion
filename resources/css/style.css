@@ -63,6 +63,7 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 .about{
@@ -84,6 +85,11 @@
     font-size: 20px;
     cursor: pointer;
     display: none;
+    transition: all 0.5s ease;
+}
+
+.icon.menu-btn:hover{
+    transform: rotate(180deg);
 }
 
 .icon.cancel-btn{
@@ -100,13 +106,14 @@
     .icon.hide{
         display: none;
     }
+    
     .navbar .menu-list{
        position: fixed;
        top: 0;
        left: -100%;
        height: 100vh;
        width: 100%;
-       max-width: 400px;
+       max-width: 100%;
        background: #222;
        display: block;
        padding: 40px;
@@ -158,4 +165,56 @@
         --num-cols: 2;
         --row-height: 200px
     }
+}
+
+.contact-title{
+    color: #fff;
+    padding-top: 100px;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.contact-title h1{
+    font-size: 32px;
+}
+
+.contact-title h2{
+    font-size: 16px;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 1s ease;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 1vmax;
+}
+
+form .submit:hover{
+    background: #f44336;
+    cursor: pointer;
 }
